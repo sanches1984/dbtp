@@ -1,2 +1,2 @@
-# simple-proto
+# Simple Protocol
 Custom protocol over TCP
