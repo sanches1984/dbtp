@@ -1,4 +1,4 @@
-package simple_proto
+package dbtp
 
 const delimiter = '\n'
 

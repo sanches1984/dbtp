@@ -1,6 +1,10 @@
 # Database Transport Protocol (DBTP)
 Custom protocol over TCP for db operations.
 
+## Install package
+
+    go get -v github.com/sanches1984/dbtp
+
 ## Server
 Example:
 ```go
@@ -24,8 +28,16 @@ server.Listen(":8086")
 ```
 
 ## Client
+Supported operations:
+- add
+- edit
+- delete
+- get
+
 Example:
 ```go
-request, _ := dbtp.NewRequest(":8086/table_name/add", []byte("some data"))
+request, _ := dbtp.NewRequest(":8086/table_name/edit", []byte("some data"))
+request.ObjectID = 1
+
 response, _ := dbtp.DefaultClient.Do(request)
 ```

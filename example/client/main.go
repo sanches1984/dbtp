@@ -1,7 +1,7 @@
 package main
 
 import (
-	dbtp "github.com/sanches1984/simple-proto"
+	"github.com/sanches1984/dbtp"
 	"log"
 )
 
